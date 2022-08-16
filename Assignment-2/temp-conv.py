@@ -10,22 +10,22 @@ while end_counter != 1:
 
 if first_temp == 'C':
     if sec_temp == 'F':
-        temp = (temp * 9.5) + 32
+        temp = (temp * 9 / 5) + 32
         print('dama be farenheit: ', temp)
     elif sec_temp == 'K':
         temp = (temp + 273.15)
         print('dama be kelvin: ', temp)
 elif first_temp == 'F':
     if sec_temp == 'C':
-        temp = (temp - 32) / 9.5
+        temp = (temp - 32) * 5 / 9
         print('dama be celsius: ', temp)
     elif sec_temp == 'K':
-        temp = 1.8 / (temp + 459.67)
+        temp = (temp - 32) * 5 / 9 + 273.15
         print('dama be kelvin: ', temp)
 elif first_temp == 'K':
     if sec_temp == 'C':
-        temp = (temp + 273.15)
+        temp = (temp - 273.15)
         print('dama be celsius: ', temp)
     elif sec_temp == 'F':
-        temp = 459.67 - (temp * 1.8)
+        temp = (temp - 273.15) * 9 / 5 +32
         print('dama be farenheit: ', temp)
