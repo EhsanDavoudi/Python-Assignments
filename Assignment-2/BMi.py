@@ -1,7 +1,7 @@
 weight = float(input('vazn ra be kilogram vared konid: '))
 height = float(input('ghad khode ra  be metr vared konid: '))
 
-bmi = weight / height
+bmi = weight / (height ** 2)
 if 16 > bmi:
     print('vazn o ghad shoma tabii nist')
 elif 16 < bmi <= 18.5:
